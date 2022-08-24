@@ -6,3 +6,6 @@ Es un middleware! Es necesario configurar el cors.
 
 **HERRAMIENTAS**
 1. Postman
+
+# WebServer + RestServer
+Recordar ejecutar ``npm install`` para reconstruir los módulos de Node
