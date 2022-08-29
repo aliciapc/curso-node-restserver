@@ -6,6 +6,7 @@ Es un middleware! Es necesario configurar el cors.
 4. mongoose
 5. bcryptjs--> para encriptación de contraseñas
 6. express-validator--> coleccion de middlewares
+7. jsonwebtoken-->
 
 **HERRAMIENTAS**
 1. Postman

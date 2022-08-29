@@ -81,14 +81,19 @@ const usersPatch =(req, res = response)=>{
 const usersDelete = async (req, res = response)=>{
     const {id} = req.params;
 
+    const uid =req.uid;
+
     //Eliminar registro fisicamente
     //const usuario = await Usuario.findByIdAndDelete(id);
     //Mejor cambiar el estado de usuario en vez de eliminar
     const usuario = await Usuario.findByIdAndUpdate(id, {estado:false});
+    const usuarioAutenticado = req.usuario;
 
     res.json({
         msg: "delete API - controller ",
-        usuario
+        usuario, 
+        //uid
+        //usuarioAutenticado
     });
 }
 
