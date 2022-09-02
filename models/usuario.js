@@ -40,7 +40,7 @@ const UsuarioSchema = Schema({
     
 });
 
-
+//extraer el password, __v, _id
 UsuarioSchema.methods.toJSON = function(){
     const {__v, password, _id,...usuario}= this.toObject();
     usuario.uid = _id;
