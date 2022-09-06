@@ -28,6 +28,8 @@ const ProductoSchema = Schema ({
     },
     descripcion: { type: String},
     disponible: {type: Boolean, default: true},
+    //Grabar la imagen
+    img:{type: String},
 });
 
 //extraer el password, __v, _id. Aquellas propiedades que no nos interesan
